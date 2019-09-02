@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style>
+        body 
+{ 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background: #14d3da; 
+} 
+h1 
+{ 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%); 
+    margin: 0; 
+    padding: 0 20px; 
+    text-transform: uppercase; 
+    font-size: 6em; 
+    text-shadow: 0 5px 15px rgba(0,0,0,.3); 
+    border: 15px solid #000; 
+    border-top: transparent; 
+} 
+h1 span 
+{ 
+    position: relative; 
+    display: inline-block; 
+} 
+h1 span:nth-child(4) 
+{ 
+    color: #fff; 
+    animation: animate 3s alternate infinite; 
+} 
+@keyframes animate 
+{ 
+    0% 
+    { 
+        transform: translateY(0) rotate(0deg); 
+    } 
+    40% 
+    { 
+        transform: translateY(0) rotate(0deg); 
+    } 
+    50% 
+    { 
+        transform: translateY(-100px) rotate(180deg); 
+    } 
+    60% 
+    { 
+        transform: translateY(0) rotate(360deg); 
+    } 
+    100% 
+    { 
+        transform: translateY(0) rotate(360deg); 
+    } 
+} 
+ 
+h1:hover span 
+{ 
+    cursor: pointer; 
+    animation: animate 3s alternate infinite; 
+} 
+h1:hover span:nth-child(1) 
+{ 
+    animation-delay: 0; 
+} 
+h1:hover span:nth-child(2) 
+{ 
+    animation-delay: .2s; 
+} 
+h1:hover span:nth-child(3) 
+{ 
+    animation-delay: .6s; 
+} 
+h1:hover span:nth-child(5) 
+{ 
+    animation-delay: .1s; 
+} 
+h1:hover span:nth-child(6) 
+{ 
+    animation-delay: .5s; 
+} 
+h1:hover span:nth-child(7) 
+{ 
+    animation-delay: .3s; 
+}
+    </style>
+</head>
+<body>
+    <h1><span>M</span><span>A</span><span>H</span><span>M</span><span>O</span><span>O</span><span>D</span></h1>
+</body>
+</html>
